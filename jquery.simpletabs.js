@@ -8,8 +8,13 @@
         var $titles = $container.find('.tab-title');
         var $bodys = $container.find('.tab-body');
 
+        var $initialCurrentTitle = $titles.filter('.current');
+        if(!$initialCurrentTitle.length) {
+            $initialCurrentTitle = $titles.first().addClass('current');
+        }
+
         $bodys.hide();
-        $( $titles.filter('.current').data('target') ).show();
+        $( $initialCurrentTitle.data('target') ).show();
 
         $titles.bind(settings.event, function(){
             $(this).addClass('current').siblings().removeClass('current');

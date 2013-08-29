@@ -1,21 +1,30 @@
-.simpletabs {
-}
 .simpletabs .tabs-nav {
+    cursor: pointer;
     list-style: none;
     margin: 0;
     padding: 0;
     clear: both;
     height: 30px;
+    border-bottom: 1px solid #DDD;
 }
 .simpletabs .tab-title {
     float: left;
-    margin: 0 3px 0 0;
-    padding: 0 6px;
-    line-height: 30px;
-    background: #CCC;
+    display: inline;
+    margin: 0 6px 0 0;
+    padding: 0 10px;
+    height: 29px; line-height: 29px;
+    background: #F0F0F0;
+    border: 1px solid #DDD;
+    border-bottom-width: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 14px;
 }
 .simpletabs .tab-title.current {
+    position: relative;
     background: #FFF;
+    margin-bottom: -1px;
+    padding-bottom: 1px;
 }
 .simpletabs .tab-body {
     clear: both;
