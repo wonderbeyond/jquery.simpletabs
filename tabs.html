@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Untitled</title>
+<link rel="stylesheet" href="./simpletabs.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./jquery.simpletabs.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+        $('#my-tabs').tabs();
+});
+</script>
+</head>
+<body>
+    <div id="my-tabs" class="simpletabs">
+        <ul class="tabs-nav">
+            <li data-target="#tab1" class="tab-title current">Tab 1</li>
+            <li data-target="#tab2" class="tab-title">Tab 2</li>
+            <li data-target="#tab3" class="tab-title">Tab 3</li>
+        </ul>
+        <div class="tab-body" id="tab1">hello tab 1</div>
+        <div class="tab-body" id="tab2">hello tab 2</div>
+        <div class="tab-body" id="tab3">hello tab 3</div>
+    </div>
+</body>
+</html>
